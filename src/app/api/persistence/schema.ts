@@ -1,4 +1,5 @@
-import {users} from "./user/schema"
-export default {
+import users from "./user/schema"
+const tables = {
     users
 }
+export default tables
