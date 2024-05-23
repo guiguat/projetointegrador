@@ -103,14 +103,14 @@ export default async function Home() {
                 <div id='about' className="flex flex-col align-start">
                     <h3 className='text-black text-4xl font-bold'>Sobre nós</h3>
                     <p className='text-black text-md mt-5'>
-                        A organização não governamental "Gatos da Lagoa" localiza-se na cidade de Campinas-SP.
+                        A organização não governamental Gatos da Lagoa localiza-se na cidade de Campinas-SP.
                         Prezando pelo bem-estar animal, a O.N.G. dedica-se a cuidar dos animais que vivem no espaço
                         da Lagoa do Taquaral, bem como encontrar famílias para os animais que estiverem aptos para a
                         adoção.
                         Com foco no resgate, proteção, castração, vacinação, alimentação e doação de mais de 200 gatos
                         que vivem nas matas da Lagoa Taquaral, a instituição, que conquistou o título de ONG em 2012, já
                         existia informalmente há 20 anos. Contamos com o apoio de uma equipe de voluntários e dos
-                        'Amigos da Lagoa' para cuidar e encontrar lares para esses felinos que nasceram nas matas ou
+                        Amigos da Lagoa para cuidar e encontrar lares para esses felinos que nasceram nas matas ou
                         foram abandonados.
                     </p>
                 </div>
