@@ -3,10 +3,10 @@ import {useCallback, useState} from "react";
 import { MdDehaze, MdClose } from "react-icons/md";
 import {Dialog} from "@headlessui/react";
 const navigation = [
-    {name: 'Adoção', href: '#'},
-    {name: 'Sobre nós', href: '#'},
-    {name: 'Como ajudar', href: '#'},
-    {name: 'Contato', href: '#'},
+    {name: 'Adoção', href: '#adoption'},
+    {name: 'Sobre nós', href: '#about'},
+    {name: 'Como ajudar', href: '#help'},
+    {name: 'Contato', href: '#contact'},
 ]
 export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
