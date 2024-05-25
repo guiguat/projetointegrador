@@ -1,8 +1,9 @@
 import type {Metadata} from "next";
 import {Montserrat} from "next/font/google";
-import "./globals.css";
+import "../globals.css";
+import Footer from "@/app/components/Footer";
 
-const font = Montserrat({subsets: ["latin"]});
+const inter = Montserrat({subsets: ["latin"]});
 
 export const metadata: Metadata = {
     title: "Gatos Da Lagoa - Taquaral",
@@ -16,8 +17,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <body className={font.className}>
+        <body className={inter.className}>
         {children}
+        <Footer/>
         </body>
         </html>
     );

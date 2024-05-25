@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import forms from "@tailwindcss/forms";
 
 const config: Config = {
   content: [
@@ -7,15 +8,19 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      greendark: '#5C7D04',
-      black: '#404040',
-      blacken: '#262626',
-      green: '#A9CF46',
-      white: '#FAFAFA',
-      gray: '#F1F1F1'
-    },
+    extend: {
+      colors: {
+        greendark: '#5C7D04',
+        black: '#404040',
+        blacken: '#262626',
+        green: '#A9CF46',
+        white: '#FAFAFA',
+        gray: '#F1F1F1'
+      },
+    }
   },
-  plugins: [],
+  plugins: [
+    forms,
+  ],
 };
 export default config;
