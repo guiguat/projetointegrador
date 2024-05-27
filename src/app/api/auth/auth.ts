@@ -27,18 +27,14 @@ export const {handlers, signIn, signOut, auth} = NextAuth({
                 password: {},
             },
             authorize: async (credentials) => {
-
                 const pwHash = saltAndHashPassword(credentials.password as string)
                 const user = {username: credentials.username, password: pwHash}
-
-                if (user != ROOT_USER.credentials) {
-                    // No user found, so this is their first attempt to login
-                    // meaning this is also the place you could do registration
-                    throw new Error("User not found.")
+                const isRootUser = user.username == ROOT_USER.credentials.username && user.password == ROOT_USER.credentials.password
+                if (isRootUser) {
+                    return await (new Promise((resolve, _) => resolve(ROOT_USER)))
                 }
 
-                // return user object with the their profile data
-                return new Promise((resolve, _) => resolve(ROOT_USER))
+                return Promise.reject("Invalid user")
             },
         }),
     ]

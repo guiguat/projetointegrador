@@ -2,11 +2,8 @@
 
 import Image from "next/image";
 import bg from '../../../public/bg.webp'
-import Navbar from "@/app/components/navbar";
-import {MdFacebook, MdOutlineShoppingBag, MdLocationPin} from "react-icons/md";
-import {BiLogoInstagramAlt} from "react-icons/bi";
-import {FC} from "react";
 import CatItem from "@/app/components/CatItem";
+import Navbar from "@/app/components/navbar";
 
 const cats = [
     {

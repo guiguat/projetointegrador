@@ -1,6 +1,6 @@
-type CatItemProps = { img: string, name: string, age: string, sex: string, size: string }
+export type Cat = { id?: number, img: string, name: string, age: string, sex: string, size: string }
 
-export default function CatItem({img, name, age, sex, size}: CatItemProps) {
+export default function CatItem({img, name, age, sex, size}: Cat) {
     return <a
 
         href="https://www.instagram.com/m/gatosdalagoa"

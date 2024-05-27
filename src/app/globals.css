@@ -2,16 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-  height: 100vh;
+html{
+  height: 100%!important;
+  margin: 0;
 }
-
+body {
+  min-height: 100%!important;
+}
 header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-
+.flex-full-height {
+  flex: 1 1 auto;
+}
+.row-footer {
+  flex: 0 1 40px;
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
 /* Medium devices (landscape tablets, 768px and up) */
@@ -32,4 +40,18 @@ header {
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+  .adoption-edit-grid {
+    display: grid !important;
+    grid-auto-columns: max-content;
+    grid-auto-flow: dense;
+    grid-auto-rows: minmax(auto, auto);
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .adoption-edit-grid-item {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
